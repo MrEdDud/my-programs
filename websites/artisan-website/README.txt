@@ -1,0 +1,1 @@
+This is a website I made in a day for a task we were given in college. Please keep that in mind when you see the design and other things.
