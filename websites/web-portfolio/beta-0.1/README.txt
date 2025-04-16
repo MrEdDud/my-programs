@@ -1,10 +1,3 @@
-For whoever may be reading this document I would like to first thank you for doing so. In this document you will find different
-'Patch notes' for my personal web portfolio.
-If there is any sort of glitches that you experience while using this website, you can email me at eduardcojocarubusiness@gmail.com
-unless your my teacher. If you are my teacher then just talk to me directly.
-
-- Eduard Cojocaru
-
 -------------------------------
 19/10/2023 Beta Version: 0.1
 -------------------------------
@@ -20,6 +13,3 @@ straight from my CV. However I plan to change this to a personilised piece of te
 be changed.
 
 - Apart from that the website is mostly functional.
--------------------------------
-20/10/2023 Beta Version: 0.2
--------------------------------
