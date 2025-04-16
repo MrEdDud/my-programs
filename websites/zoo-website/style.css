@@ -1,0 +1,100 @@
+/*Below is all the styling for the Navbar*/
+/*Makes sure that the modal doesnt remove the scroll bar*/
+.modal-open {
+    overflow: auto !important;
+}
+
+/*Makes sure that the modal doesnt push the webpage styling*/
+body.modal-open {
+    width: 100% !important;
+    padding-right: 0 !important;
+    overflow-y: scroll !important;
+}
+
+/*Creating a transition for the buttons in the navbar*/
+.nav-link {
+    transition-duration: 0.3s;
+    transition-property: color; 
+}
+/*Checks if hovered*/
+.nav-link:hover {
+    color: #C9F2C7 !important;
+}
+
+/*Makes sure that the dropdown menu is aligned properly*/
+.information-dropdown {
+    position: absolute;
+    transform: translateX(-20%);
+}
+
+/*Moves the items in the navbar further away from the left and right*/
+nav {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+
+/*Below is all the styling for the Booking Page*/
+/*Styling and positioning for the text*/
+.ticket-text-styling {
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.btn {
+    position: relative;
+    transition: 0.3s ease !important;
+}
+/*Makes the button smaller when hovered over*/
+.btn:hover {
+    transform: scale(0.95) !important;
+}
+
+/*Styling for the images*/
+.img {
+    max-width: 30em;
+    height: auto;
+    object-fit: contain;
+    border-radius: 1em;
+}
+
+/*Below is all the styling for the Information Page*/
+
+.white-container {
+    background-color: white;
+    padding: 20px;
+    padding-left: 30em;
+    padding-right: 30em;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+/*Below is all the styling for the login page*/
+
+.login-register-container {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*Login tab buttons*/
+.nav-tabs .nav-link {
+    color: black !important;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #96be8c !important;
+}
+
+/*Below is the code for the ticket bookings*/
+.table-transparent {
+    background-color: transparent !important;
+}

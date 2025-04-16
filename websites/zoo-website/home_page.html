@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Riget Zoo Adventures</title>
+</head>
+<body>
+    <!--Background styling-->
+    <style>
+    body {
+        background-image: url(/images/Home_Page/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    </style>
+    <!--Header/Navbar-->
+    <nav class="navbar navbar-expand-sm d-flex" style="background-color:  #314323; color: white;">
+        <div class="container-fluid px-5">
+            <!--Zoo name-->
+            <a class="nav-link" style="font-weight: bold; font-size: 2em;" href="home_page.html">Riget Zoo Adventures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ms-auto mb-2 mb-lg-0 justify-content-end">
+                    <!--Information page button-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; margin-right: 3em; font-size: 1.2em;"><strong>Information</strong></a>
+                        <ul class="dropdown-menu dropdown-menu-end text-center information-dropdown">
+                            <li><a class="dropdown-item text-end" href="/pages/information/educational_materials_page.html">Educational support materials</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-end" href="/pages/information/information_page.html">Help and Information</a></li>
+                        </ul>
+                    </li>
+                    <!--Booking page button-->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="booking_page.html" style="color: white; margin-right: 3em; font-size: 1.2em;"><strong>Book tickets</strong></a>
+                    </li>
+                    <!--Home page button-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="home_page.html" style="color: white; margin-right: 3em; font-size: 1.2em;"><strong>Home</strong></a>
+                    </li>
+                    <!--Account logo dropdown button-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            <!--Account logo picture-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                        </a>
+                        <!--Dropdown options-->
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-end">
+                            <li><a class="dropdown-item text-end" href="login_page.html">Login</a></li>
+                            <li><a class="dropdown-item text-end" href="booking_page.html">Bookings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <button type="button" class="dropdown-item text-end" data-bs-toggle="modal" data-bs-target="#accessibilityModal">
+                                    Accessibility options
+                                </button>
+                            </li>
+                            <li><a class="dropdown-item text-end" href="settings_page.html">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Modal Code-->
+    <div class="modal fade" id="accessibilityModal" tabindex="-1" aria-labelledby="accessibilityModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accessibilityModalLabel">Accessibility options</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <!--Accessibility option 1 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck1">Option 1</label>
+                                    <!--Accessibility option 2 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck2">Option 2</label>
+                                    <!--Accessibility option 3 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck3">Option 3</label>
+                                    <!--Accessibility option 4 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck4">Option 4</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <!--Accessibility option 5 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck5">Option 5</label>
+                                    <!--Accessibility option 6 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck6">Option 6</label>
+                                    <!--Accessibility option 7 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck7">Option 7</label>
+                                    <!--Accessibility option 8 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck8">Option 8</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Save changes button-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Body-->
+    <div class="h1" style="margin: 2em; color: white; text-align: center;">
+        <!--Title-->
+        <strong>Welcome to Riget Zoo Adventures!</strong>
+    </div>
+    <!--About us section-->
+    <div class="container-fluid" style="background-color: #314323; height: 10px;"></div>
+    <div class="card" style="height: 43em; background-color: white; border-radius: 0px; color: #314323;">
+        <div class="card-body container">
+            <!--About us title-->
+            <h2 class="card-title" style="margin: 1em; border-radius: 0px; color: #445E31;"><strong>More about us!</strong></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!--About us paragraph-->
+                    <p class="card-text" style="margin-left: 2em; margin-bottom: 1em; color: #445E31;">At Riget Zoo Adventures, we're dedicated to providing a memorable and educational experience for visitors of all ages. Nestled in the heart of London, our zoo is home to a diverse collection of animals from around the world, offering a fascinating journey into the wonders of nature.</p>
+                    <p class="card-text" style="margin-left: 2em; margin-bottom: 1em; color: #445E31;">From majestic big cats to playful primates and exotic birds, our zoo showcases a wide variety of species in naturalistic habitats designed to mimic their native environments. Whether you're observing our endangered species conservation efforts or marveling at the acrobatics of our resident primates, every visit promises exciting encounters with the animal kingdom.</p>
+                </div>
+                <div class="col-md-6">
+                    <!--About us image-->
+                    <img src="/images/Home_Page/picture_1.jpg" class="card-img" alt="wireframe" style="max-width: 600px;"> 
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #314323; height: 10px;"></div>
+    <!--Section 2-->
+    <h2 style="text-align: center; color: white; margin: 3em;"><strong>Events in the near future</strong></h2>
+    <div class="container-fluid" style="background-color: #314323; height: 10px;"></div>
+    <div class="card" style="height: 43em; background-color: white; border-radius: 0px; color: #314323;">
+        <div class="card-body container">
+            <!--Section 2 title-->
+            <h2 class="card-title" style="margin: 1em; border-radius: 0px; color: #445E31;"><strong>Our events</strong></h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Section 2 paragraph-->
+                    <p class="card-text" style="margin-left: 2em; margin-bottom: 1em; color: #445E31;">Don't miss the opportunity to witness our animals in action during our Friday Feeding Frenzy event! Join us as our expert animal care team conducts feeding sessions throughout the day, offering visitors a rare glimpse into the natural feeding behaviors of our diverse species. From the graceful giraffes to the playful otters, each feeding session promises excitement and insight into the dietary preferences of our animal ambassadors. Happening this Friday!</p>
+                    <p class="card-text" style="margin-left: 2em; margin-bottom: 1em; color: #445E31;">Embark on a wild adventure at Riget Zoo Adventures during our special event days! Join us for thrilling activities such as scavenger hunts, animal enrichment demonstrations, and interactive keeper talks. Get up close and personal with some of our most fascinating residents and learn about their behaviors, habitats, and conservation status.</p>
+                </div>
+                <div class="col-md-6">
+                    <!--Section 2 image-->
+                    <img src="/images/Home_Page/picture_2.jpg" class="card-img" alt="wireframe" style="max-width: 600px;"> 
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer text-center fixed-bottom" style="background-color: rgba(201,242,199, 0.5);">
+        <div class="container" style="opacity: 0.9;">
+            <span>&copy; Riget Zoo Adventures</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

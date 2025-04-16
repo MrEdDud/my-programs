@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../../style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Information</title>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('../../images/Educational_Materials_Page/background.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <!--Header/Navbar-->
+    <nav class="navbar navbar-expand-sm d-flex" style="background-color:  #314323; color: white;">
+        <div class="container-fluid px-5">
+            <!--Zoo name-->
+            <a class="nav-link" style="font-weight: bold; font-size: 2em;" href="../../home_page.html">Riget Zoo Adventures</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ms-auto mb-2 mb-lg-0 justify-content-end">
+                    <!--Information page button-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; margin-right: 3em; font-size: 1.2em;"><strong>Information</strong></a>
+                        <ul class="dropdown-menu dropdown-menu-end text-center information-dropdown">
+                            <li><a class="dropdown-item text-end" href="educational_materials_page.html">Educational support materials</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-end" href="information_page.html">Help and Information</a></li>
+                        </ul>
+                    </li>
+                    <!--Booking page button-->
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../../booking_page.html" style="color: white; margin-right: 3em; font-size: 1.2em;"><strong>Book tickets</strong></a>
+                    </li>
+                    <!--Home page button-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../home_page.html" style="color: white; margin-right: 3em; font-size: 1.2em;"><strong>Home</strong></a>
+                    </li>
+                    <!--Account logo dropdown button-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            <!--Account logo picture-->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                        </a>
+                        <!--Dropdown options-->
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-menu-end">
+                            <li><a class="dropdown-item text-end" href="../../login_page.html">Login</a></li>
+                            <li><a class="dropdown-item text-end" href="../../booking_page.html">Bookings</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <button type="button" class="dropdown-item text-end" data-bs-toggle="modal" data-bs-target="#accessibilityModal">
+                                    Accessibility options
+                                </button>
+                            </li>
+                            <li><a class="dropdown-item text-end" href="settings_page.html">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Modal Code-->
+    <div class="modal fade" id="accessibilityModal" tabindex="-1" aria-labelledby="accessibilityModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accessibilityModalLabel">Accessibility options</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <!--Accessibility option 1 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck1">Option 1</label>
+                                    <!--Accessibility option 2 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck2">Option 2</label>
+                                    <!--Accessibility option 3 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck3">Option 3</label>
+                                    <!--Accessibility option 4 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck4">Option 4</label>
+                                </li>
+                                <li class="list-group-item">
+                                    <!--Accessibility option 5 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck5">Option 5</label>
+                                    <!--Accessibility option 6 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck6">Option 6</label>
+                                    <!--Accessibility option 7 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck7">Option 7</label>
+                                    <!--Accessibility option 8 button-->
+                                    <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                                    <label class="btn btn-outline-dark" for="btncheck8">Option 8</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--Save changes button-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Body-->
+    <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-lg-12">
+                <div class="p-4" style="height: 18em;">
+                    <h1 style="color: white; text-align: center; font-weight: bold; padding-top: 3em;">Educational support materials</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="background-color: #314323; height: 10px; position: absolute; left: 0;"></div>
+        <div class="row">
+            <div class="col-lg-4" style="background-color: white;"></div>
+            <div class="col-lg-4" style="background-color: white; padding: 2em; color: #314323; height: 800px;">
+                <h2 style="font-weight: bold;">Our educational materials...</h2>
+                <p>Enhance your classroom curriculum with our engaging educational programs tailored to meet academic standards and learning objectives. Our experienced educators offer a variety of curriculum-based workshops, guided tours, and field trip experiences designed to reinforce classroom lessons and ignite a passion for wildlife conservation.</p>
+                <p>Access a wealth of educational materials and resources available on our website, including lesson plans, activity sheets, and multimedia content. Whether you're a teacher, parent, or lifelong learner, our educational materials provide valuable information and resources to support your exploration of the natural world and inspire a deeper connection to wildlife and conservation.</p>
+                <p>Explore our interactive Discovery Stations located throughout the zoo, where visitors can engage with hands-on activities, educational exhibits, and informative displays. Learn about animal adaptations, conservation challenges, and the importance of biodiversity while discovering fascinating facts about our resident species.</p>
+                <hr>
+                <h2 style="font-weight: bold; ">Downloadable files</h2>
+                <a href="#yes">File 1</a><br>
+                <a href="#yes">File 2</a><br>
+                <a href="#yes">File 3</a>
+            </div>
+            <div class="col-lg-4" style="background-color: white;"></div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer text-center fixed-bottom" style="background-color: rgba(201,242,199, 0.5);">
+        <div class="container" style="opacity: 0.9;">
+            <span>&copy; Riget Zoo Adventures</span>
+        </div>
+    </footer>
+    <script src="../../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
