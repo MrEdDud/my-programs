@@ -1,0 +1,1 @@
+This website was made for my final year of college exam where we were tasked to make a website for a zoo after doing research and write reports and other stuff. This website is mostly functional until you get to the 'payment system' or lack thereof.
